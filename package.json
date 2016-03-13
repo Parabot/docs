@@ -1,5 +1,6 @@
 {
   "name": "iodocs",
+  "license": "Apache-2.0",
   "version": "0.0.1",
   "description": "Live API Documentation and Browsing",
   "homepage": "http://mashery.com",
