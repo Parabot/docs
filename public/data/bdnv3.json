@@ -1,31 +1,26 @@
 {
+    "basePath": "http://v3.bdn.parabot.org",
+    "name": "Parabot BDN API v3",
+    "protocol": "rest",
+    "publicPath": "/api",
+    "version": "3.0",
+    "headers": {
+        "Content-Type": "application/json"
+    },
     "auth": {
         "key": {
-            "param": "key"
+            "param": "api_key"
         }
     },
-    "basePath": "http://api.klout.com",
-    "name": "Partner API v2",
-    "protocol": "rest",
-    "publicPath": "/v2",
-    "version": "2.0",
     "resources": {
-        "Identity Methods": {
+        "Users Methods": {
             "methods": {
-                "IdentityGoogle": {
-                    "description": "This method allows you to retrieve a KloutID for numeric google_plus_id",
+                "GetCsrf": {
+                    "description": "Allows you to retrieve your csrf",
                     "httpMethod": "GET",
-                    "name": "Identity(Google+)",
-                    "parameters": {
-                        "google_plus_id": {
-                            "default": "112620727907435773834",
-                            "description": "A Google+ ID (e.g. 112620727907435773834)",
-                            "location": "path",
-                            "required": true,
-                            "type": "string"
-                        }
-                    },
-                    "path": "/identity.json/gp/{google_plus_id}"
+                    "name": "Get CSRF",
+                    "parameters": {},
+                    "path": "/users/session/csrf"
                 },
                 "IdentityInstagram": {
                     "description": "This method allows you to retrieve a KloutID for numeric Instagram_id",
