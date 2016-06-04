@@ -19,6 +19,7 @@
                     "description": "Allows you to retrieve your csrf",
                     "httpMethod": "GET",
                     "name": "Get CSRF",
+                    "parameters": {},
                     "path": "/users/session/csrf"
                 },
                 "IdentityInstagram": {
